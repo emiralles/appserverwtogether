@@ -1,0 +1,21 @@
+{
+  "name": "chatserver",
+  "version": "1.0.0",
+  "description": "chat server",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "ionic2",
+    "ionic2-chat",
+    "chat",
+    "node",
+    "realtime"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.0.1"
+  }
+}
