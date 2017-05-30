@@ -4,7 +4,8 @@
   "description": "chat server",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js",
+    "test": "no se ha definido"
   },
   "repository": {
     "type": "git",
