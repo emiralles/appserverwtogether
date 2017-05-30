@@ -1,0 +1,19 @@
+{
+  "name": "wtogetherapp",
+  "version": "1.0.0",
+  "description": "chat server",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.evennode.com:020a1c4a8c93d5ad7a514967226f1521.git"
+  },
+  "author": "Enrique Miralles",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "socket.io": "^2.0.1"
+  }
+}
