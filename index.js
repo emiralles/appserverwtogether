@@ -8,7 +8,7 @@ server.listen(port, function () {
   console.log('Server listening at port %d', port);
 });
 // Routing
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname));
 
 // var socket = require('socket.io'),
 //     http = require('http'),
