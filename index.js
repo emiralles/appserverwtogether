@@ -7,8 +7,21 @@ var port = process.env.PORT || 3000;
 server.listen(port, function () {
   console.log('Server listening at port %d', port);
 });
-// Routing
-app.use(express.static(__dirname));
+
+
+io.on('connection',function(socket){
+
+  socket.on('connect', function (socket) {
+    var idCliente=socket.id;
+    socket.emit('Connected', {
+      id: socket.id,
+      message: 'Client connected'
+    });
+  });
+
+});
+// Routincog
+//app.use(express.static(__dirname));
 
 // var socket = require('socket.io'),
 //     http = require('http'),
