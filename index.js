@@ -14,7 +14,7 @@ app.get('/',function(req,res){
     res.status(200).send("Servidor Listo");
 });
 
-socket = socket.listen(server);
+//socket = socket.listen(server);
 
 socket.on('connection',function(connection){
     console.log('User Connected');
@@ -33,9 +33,6 @@ socket.on('connection',function(connection){
     
 });
 
-io.on('connection', function(socket){
-  socket.join('some room');
-});
 
 server.listen(3000, function(){
     console.log('Server started');
