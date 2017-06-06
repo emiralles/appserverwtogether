@@ -1,7 +1,5 @@
-'use strict';
-
 var firebase = require("firebase-admin");
-var serviceAccount = require("wtogether-4855e-firebase-adminsdk-44scg-23a03dea32.json");
+var serviceAccount = require('../wtogether-4855e-firebase-adminsdk-44scg-23a03dea32.json');
 
 var structUser = {
     userId: '',
@@ -24,7 +22,7 @@ var structRoom = {
 };
 
 firebase.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
+  credential: firebase.credential.cert(serviceAccount),
   databaseURL: "https://wtogether-4855e.firebaseio.com"
 });
 
