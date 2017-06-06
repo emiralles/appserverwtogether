@@ -1,20 +1,23 @@
 {
-  "name": "wtogetherapp",
+  "name": "chatserver",
   "version": "1.0.0",
   "description": "chat server",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "no se ha definido"
+    "test": "node index.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@git.evennode.com:020a1c4a8c93d5ad7a514967226f1521.git"
-  },
-  "author": "Enrique Miralles",
+  "keywords": [
+    "ionic2",
+    "ionic2-chat",
+    "chat",
+    "node",
+    "realtime"
+  ],
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
+    "firebase-admin": "^5.0.0",
     "socket.io": "^2.0.1"
   }
 }
