@@ -1,10 +1,18 @@
-'use strict';
+var express = require(express);
+var app = express();
 
 var dbs = require("/home/emir/nodeJS/chatserver/database/db.js");
 
-var socket = require('socket.io'),
-    http = require('http'),
-    server = http.createServer(),
+var server = require('http').server(app);
+
+var socket = require('socket.io')(server);
+
+    //http = require('http'),
+    //server = http.createServer(),
+
+app.get('/',function(req,res){
+    res.status(200).send("Servidor Listo");
+});
 
 socket = socket.listen(server);
 
@@ -29,7 +37,7 @@ io.on('connection', function(socket){
   socket.join('some room');
 });
 
-server.listen(3000, ()=>{
+server.listen(3000, function(){
     console.log('Server started');
 });
 
