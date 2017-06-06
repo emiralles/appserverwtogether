@@ -1,11 +1,8 @@
-var express = require(express);
+var express = require('express');
 var app = express();
-
-var dbs = require("/home/emir/nodeJS/chatserver/database/db.js");
-
-var server = require('http').server(app);
-
+var server = require('http').Server(app);
 var socket = require('socket.io')(server);
+var dbs = require("/home/emir/nodeJS/chatserver/database/db.js");
 
     //http = require('http'),
     //server = http.createServer(),
