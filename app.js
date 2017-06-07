@@ -3,7 +3,7 @@ var app = express();
 var server = require('http').Server(app);
 var socket = require('socket.io')(server);
 var bodyparser = require('body-parser');
-var dbs = require('/home/emir/nodeJS/chatserver/database/db.js');
+var dbs = require('../database/db.js');
 
     //http = require('http'),
     //server = http.createServer(),
