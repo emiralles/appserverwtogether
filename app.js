@@ -2,11 +2,13 @@ var express = require('express');
 var app = express();
 var server = require('http').Server(app);
 var socket = require('socket.io')(server);
+var bodyparser = require('body-parser');
 var dbs = require("/home/emir/nodeJS/chatserver/database/db.js");
 
     //http = require('http'),
     //server = http.createServer(),
-
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({extended: true}));
 app.get('/',function(req,res){
     res.status(200).send("Servidor Listo");
 });
